@@ -1,0 +1,92 @@
+:root {
+    --main-bg-color: #FFDAB9;
+    --text-color: white;
+    --article-bg-color: black;
+    --border-radius: 10px;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px;
+    background-image: url('/assests/u.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: url('header-background.jpg') center/cover;
+    color: #fff;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.pic {
+    position: relative;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.recipe-description {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.article {
+    flex: 0 0 calc(48% - 40px);
+    margin: 20px;
+    background-color: var(--article-bg-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-steps {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: var(--text-color);
+}
+
+.fa-book-open {
+    margin-right: 5px;
+    color: white;
+}
+
+/* Add more styles for social icons if needed */
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+}

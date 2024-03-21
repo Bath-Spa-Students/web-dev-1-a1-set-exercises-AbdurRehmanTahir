@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #171717;
+            color: #f4eeee;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Garamond', serif;
+            font: size 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e60707;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .html-example, .css-example {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .html-example h3, .css-example h3 {
+            color: #343a40;
+            font-size: 1.5em;
+            margin-top: 0;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .html-example p, .css-example p {
+            color: #666;
+            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+
+        code {
+            color: #d63384;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Quick Reference</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#html">HTML Tags</a></li>
+            <li><a href="#css">CSS Properties</a></li>
+        </ul>
+    </nav>
+
+    <section id="html">
+        <h2>HTML Tags</h2>
+        <div class="html-example">
+            <h3>&lt;p&gt;</h3>
+            <p>The paragraph tag is used to define a paragraph of text.</p>
+            <pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+        </div>
+
+        <!-- Add more HTML tags and examples here -->
+        <div class="html-example">
+            <h3>&lt;head&gt;</h3>
+            <p>The head tag contains meta-information about the HTML document.</p>
+            <pre><code>&lt;head&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="Description of the document"&gt;
+&lt;/head&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;body&gt;</h3>
+            <p>The body tag contains the content of the HTML document.</p>
+            <pre><code>&lt;body&gt;
+    &lt;h1&gt;Heading&lt;/h1&gt;
+    &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;div&gt;</h3>
+            <p>The div tag is a generic container for grouping elements.</p>
+            <pre><code>&lt;div&gt;
+    &lt;p&gt;Paragraph 1&lt;/p&gt;
+    &lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;span&gt;</h3>
+            <p>The span tag is an inline container used for styling a specific part of text.</p>
+            <pre><code>&lt;p&gt;This is a &lt;span style="color: red;"&gt;red&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;h1&gt;-&lt;h6&gt;</h3>
+            <p>The heading tags define headings of different levels.</p>
+            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;strong&gt;</h3>
+            <p>The strong tag is used to highlight important text.</p>
+            <pre><code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;em&gt;</h3>
+            <p>The em tag is used to emphasize text.</p>
+            <pre><code>&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;br&gt;</h3>
+            <p>The br tag inserts a line break.</p>
+            <pre><code>&lt;p&gt;Line 1&lt;br&gt;Line 2&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="html-example">
+            <h3>&lt;hr&gt;</h3>
+            <p>The hr tag inserts a horizontal line.</p>
+            <pre><code>&lt;p&gt;Above the line&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Below the line&lt;/p&gt;</code></pre>
+        </div>
+    </section>
+
+    <section id="css">
+        <h2>CSS Properties</h2>
+        <div class="css-example">
+            <h3>color</h3>
+            <p>Sets the color of text.</p>
+            <pre><code>color: blue;</code></pre>
+        </div>
+        
+        <!-- Add more CSS properties and examples here -->
+        <div class="css-example">
+            <h3>font-size</h3>
+            <p>Sets the size of the font.</p>
+            <pre><code>font-size: 16px;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>background-color</h3>
+            <p>Sets the background color of an element.</p>
+            <pre><code>background-color: #ff0000;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>margin</h3>
+            <p>Sets the margin of an element.</p>
+            <pre><code>margin: 10px;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>padding</h3>
+            <p>Sets the padding of an element.</p>
+            <pre><code>padding: 10px;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>border</h3>
+            <p>Sets the border of an element.</p>
+            <pre><code>border: 1px solid #000;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>text-align</h3>
+            <p>Aligns the text within an element.</p>
+            <pre><code>text-align: center;</code></pre>
+        </div>
+        <div class="css-example">
+            <h3>font-family</h3>
+            <p>Sets the font family for text.</p>
+            <pre><code>font-family: Arial, sans-serif;</code></pre>
+        </div>
+    </section>
+    <footer>
+       <center><p>&copy; 2024 HTML & CSS Quick-Reference Guide. Created by ABDUR-REHMAN TAHIR.</p></center> 
+    </footer>
+</body>
+</html>
