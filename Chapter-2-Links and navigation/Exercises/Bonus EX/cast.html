@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast - The Flash Series</title>
+    <!-- Include the same styles as main.html -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for this specific page */
+        body {
+            font-family: 'Consolas', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Same background color as in main.html */
+            color: #fff;
+            line-height: 1.6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 2em; /* Adjust title font size */
+            margin-bottom: 20px; /* Adjust margin */
+            text-align: center; /* Center the title */
+        }
+
+        p {
+            font-size: 1.2em; /* Adjust paragraph font size */
+            line-height: 1.5;
+            color: #fff;
+            text-align: center; /* Center the text */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Align list items to the left */
+        }
+
+        li {
+            font-size: 1.2em; /* Adjust list item font size */
+        }
+
+        .reverse-flash-container {
+            position: relative;
+            text-align: center; /* Center the container */
+            margin-top: 20px; /* Add some space at the top */
+        }
+
+        .reverse-flash-box {
+            position: relative;
+            display: inline-block;
+            background-color: rgba(200, 200, 200, 0.25); /* Light grey with 25% visibility */
+            padding: 30px; /* Adjust box padding */
+            max-width: 80%; /* Make the box fit the screen width */
+            border-radius: 15px; /* Adjust box border radius */
+            z-index: 1; /* Ensure the box is above the icon */
+            transition: transform 0.5s ease; /* Smooth 3D effect transition */
+            transform-style: preserve-3d;
+        }
+
+        .reverse-flash-box:hover {
+            transform: scale(1.1);
+        }
+
+        .reverse-flash {
+            position: absolute;
+            content: "\26A1";
+            font-size: 1500%; /* Adjust icon size */
+            color: #ffcc00; /* Yellow lightning color */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0; /* Behind the box */
+            opacity: 0.2; /* Adjust icon opacity */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #4d4d4d;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="cast" class="content-section">
+        <!-- Content for Cast -->
+        <h2>Cast</h2>
+        <div class="reverse-flash-container">
+            <div class="reverse-flash-box">
+                <p>
+                    The series features a stellar cast including:
+                </p>
+                <ol>
+                    <li>Jesse L. Martin as Joe West .</li>
+                    <li>Keiynan Lonsdale as Wally West / Kid Flash.</li> 
+                     <li>Danielle Nicolet as Cecile Horton.</li>
+                    <li>Hartley Sawyer as Ralph Dibny / Elongated Man.</li>
+                    <li> John Wesley Shipp as Henry Allen / Jay Garrick / Barry Allen (Earth-90) </li>
+                </ol>
+            
+            </div>
+            <span class="reverse-flash"></span>
+        </div>
+        <a href="excercisebonus.html" class="button">Home</a> <!-- Home button -->
+    </section>
+
+</body>
+
+</html>

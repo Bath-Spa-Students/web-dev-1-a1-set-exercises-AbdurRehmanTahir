@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Characters - The Flash Series</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for this specific page */
+        body {
+            font-family: 'Consolas', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Same background color as in main.html */
+            color: #fff;
+            line-height: 1.6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 2em; /* Adjust title font size */
+            margin-bottom: 20px; /* Adjust margin */
+            text-align: center; /* Center the title */
+        }
+
+        p {
+            font-size: 1.2em; /* Adjust paragraph font size */
+            line-height: 1.5;
+            color: #fff;
+            text-align: center; /* Center the text */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Align list items to the left */
+        }
+
+        li {
+            font-size: 1.2em; /* Adjust list item font size */
+        }
+
+        .character-container {
+            position: relative;
+            text-align: center; /* Center the container */
+            margin-top: 20px; /* Add some space at the top */
+        }
+
+        .character-box {
+            display: inline-block;
+            background-color: rgba(200, 200, 200, 0.25); /* Light grey with 25% visibility */
+            padding: 30px; /* Adjust box padding */
+            border-radius: 15px; /* Adjust box border radius */
+            transition: transform 0.5s ease; /* Smooth 3D effect transition */
+            transform-style: preserve-3d;
+        }
+
+        .character-box:hover {
+            transform: scale(1.1);
+        }
+
+        .character-icon {
+            position: absolute;
+            content: "\26A1";
+            font-size: 150px; /* Adjust icon size */
+            color: #ffcc00; /* Yellow lightning color */
+            transform: translate(-50%, -50%);
+            opacity: 0.2; /* Adjust icon opacity */
+        }
+
+        .button {
+            display: block;
+            width: 100px;
+            margin: 20px auto; /* Center the button */
+            padding: 15px 30px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #4d4d4d;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="characters" class="content-section">
+        <!-- Content for Characters -->
+        <h2>Characters</h2>
+        <div class="character-container">
+            <div class="character-box">
+                <ul>
+                    <li>Caitlin Snow / Killer Frost: A bioengineer who can manipulate ice and cold. Portrayed by Danielle Panabaker.</li>
+                    <li>Joe West: Barry's adoptive father and a detective in the Central City Police Department. Portrayed by Jesse L. Martin.</li>
+                    <li>Wally West / Kid Flash: Iris's brother who gains super-speed abilities. Portrayed by Keiynan Lonsdale.</li>
+                    <li>Ralph Dibny / Elongated Man: A private investigator with the ability to stretch his body. Portrayed by Hartley Sawyer.</li>
+                </ul>
+            </div>
+            <span class="character-icon"></span>
+        </div>
+        <a href="excercisebonus.html" class="button">Home</a> <!-- Home button -->
+    </section>
+
+</body>
+
+</html>
