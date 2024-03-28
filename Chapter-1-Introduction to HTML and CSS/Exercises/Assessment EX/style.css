@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     margin: 20px;
     padding: 10px;
-    background-image: url('/assests/u.webp');
+    background-image: url('assests/u.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--main-bg-color);
